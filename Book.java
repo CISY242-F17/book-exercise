@@ -17,6 +17,9 @@ class Book
     
     // satisfies 2.88
     private String refNumber;
+    
+    // satisfies 2.91
+    private int borrowed;
 
     /**
      * Set the author and title fields when this object
@@ -32,6 +35,9 @@ class Book
         
         //satisfies 2.88
         refNumber = ""; 
+        
+        // satisfies 2.91
+        borrowed = 0;
     }
 
     //This satisfies requirement 2.83
@@ -82,6 +88,20 @@ class Book
         return refNumber;
     }
     
+    //satisfies requirement 2.91
+    public void borrow()
+    {
+        borrowed++ ;
+    }
+    
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
+   
+    
+    
+    
     //satisfies requirement 2.87
     public void printDetails()
     {
@@ -98,5 +118,8 @@ class Book
         {
             System.out.println("Reference Number: " + refNumber);
         }
+        
+        //satisfies requirement 2.91
+        System.out.println("Borrowed: " + borrowed);
     }
 }
