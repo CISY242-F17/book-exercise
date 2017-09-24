@@ -20,12 +20,15 @@ class Book
     
     // satisfies 2.91
     private int borrowed;
+    
+    //satisfies 2.92
+    private boolean courseText;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, String bookRefNumber)
+    public Book(String bookAuthor, String bookTitle, String bookRefNumber,boolean courseText)
     {
         author = bookAuthor;
         title = bookTitle;
@@ -38,6 +41,10 @@ class Book
         
         // satisfies 2.91
         borrowed = 0;
+        
+        //satisfies 2.92
+        courseText = true; 
+        
     }
 
     //This satisfies requirement 2.83
@@ -99,6 +106,11 @@ class Book
         return borrowed;
     }
    
+    //satisfies requirement 2.92
+    public boolean isCourseText()
+    {
+        return courseText;
+    }
     
     
     
@@ -121,5 +133,8 @@ class Book
         
         //satisfies requirement 2.91
         System.out.println("Borrowed: " + borrowed);
+        
+        //satisfies requirement 2.92
+        System.out.println("Course Text: " + courseText);
     }
 }
