@@ -62,14 +62,6 @@ class Book
         System.out.println(title);
     }
     
-    //satisfies requirement 2.87
-    public void printDetails()
-    {
-        System.out.println("Title: " + title + 
-                           "\nAuthor: " + author +
-                           "\nPages: " + pages );
-    }
-    
     //satisfies requirement 2.88
     public void setRefNumber(String ref)
     {
@@ -79,5 +71,23 @@ class Book
     public String getRefNumber()
     {
         return refNumber;
+    }
+    
+    //satisfies requirement 2.87
+    public void printDetails()
+    {
+        System.out.println("Title: " + title + 
+                           "\nAuthor: " + author +
+                           "\nPages: " + pages );
+        
+        //satisfies requirement 2.89
+        if(refNumber.length() == 0)
+        {
+            System.out.println("Reference Number: ZZZ");
+        }
+        else
+        {
+            System.out.println("Reference Number: " + refNumber);
+        }
     }
 }
