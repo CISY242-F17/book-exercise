@@ -11,6 +11,9 @@ class Book
     // The fields.
     private String author;
     private String title;
+    
+    // satisfies 2.85
+    private int pages;
 
     /**
      * Set the author and title fields when this object
@@ -20,6 +23,9 @@ class Book
     {
         author = bookAuthor;
         title = bookTitle;
+        
+        //satisfies 2.85
+        pages = 1; 
     }
 
     //This satisfies requirement 2.83
@@ -31,6 +37,12 @@ class Book
     public String getTitle()
     {
         return title;
+    }
+    
+    // satisfies 2.85
+    public int getPages()
+    {
+        return pages;
     }
     
     //This satisfies requirement 2.84
