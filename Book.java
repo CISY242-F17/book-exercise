@@ -22,5 +22,14 @@ class Book
         title = bookTitle;
     }
 
-    // Add the methods here ...
+    //This satisfies requirement 2.83
+    public String getAuthor()
+    {
+        return author;
+    }
+    
+    public String getTitle()
+    {
+        return title;
+    }
 }
