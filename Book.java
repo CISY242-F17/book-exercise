@@ -62,10 +62,19 @@ class Book
         System.out.println(title);
     }
     
-    //satisfies requirement 2.88
+    //satisfies requirement 2.88 and 2.90
+    //Ask professor if this is right
     public void setRefNumber(String ref)
     {
-        refNumber = ref;
+       if(ref.length() >= 3)
+       {
+           refNumber = ref;
+       }
+       else
+       {
+           System.out.println("Error: Reference Number should be " + 
+                               "at least 3 characters");
+       }
     }
     
     public String getRefNumber()
