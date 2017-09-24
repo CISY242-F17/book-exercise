@@ -56,4 +56,11 @@ class Book
         System.out.println(title);
     }
     
+    //satisfies requirement 2.87
+    public void printDetails()
+    {
+        System.out.println("Title: " + title + 
+                           "\nAuthor: " + author +
+                           "\nPages: " + pages );
+    }
 }
