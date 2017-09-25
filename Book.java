@@ -37,7 +37,7 @@ class Book
         pages = 1; 
         
         //satisfies 2.88
-        refNumber = ""; 
+        refNumber = bookRefNumber; 
         
         // satisfies 2.91
         borrowed = 0;
