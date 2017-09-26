@@ -122,7 +122,7 @@ class Book
                            "\nPages: " + pages );
         
         //satisfies requirement 2.89
-        if(refNumber.length() == 0)
+        if(refNumber.length() < 3)
         {
             System.out.println("Reference Number: ZZZ");
         }
